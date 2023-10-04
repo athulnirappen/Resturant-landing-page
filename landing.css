@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: rgb(45, 41, 41);
+  /* background-image: url(./images/bg.jpeg);
+    background-size: cover; */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 40px;
+  color: orange;
+}
+
+.link {
+  padding: 10px 20px;
+  background-color: orange;
+}
+
+/* hero section */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 12%;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+
+.title h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.title p {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.title a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: orange;
+  padding: 15px 20px;
+  color: white;
+}
+
+.image {
+  width: 400px;
+}
+
+.hero-img {
+  margin-top: -50px;
+  margin-left: 180px;
+}
+
+/* cards section */
+
+#cards {
+  margin-top: 5%;
+ 
+  
+}
+
+.cards h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  grid-gap: 15px;
+  max-width: 1500px;
+  height: auto;
+  margin: 20px auto;
+  
+ 
+ 
+  
+}
+
+.dish {
+  width: 350px;
+  height: 700px;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.dish img {
+  width: 100%;
+  height: 65%;
+  border-radius: 19px;
+}
+
+.dish-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dish-content h3 {
+  font-size: 25px;
+  color: deepskyblue;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dish-content p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dish-content a {
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px 20px;
+  background-color: orange;
+  color: black;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+
+/* responsive cards */
+
+
+@media (max-width:375px){
+
+  #cards {
+  margin-top: 5%;
+  
+ 
+}
+  .card {
+    
+    
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+  grid-gap: 20px;
+  max-width: 1500px;
+  height: auto;
+  margin: 20px auto;
+
+
+  
+}
+}
+@media (max-width:700px){
+
+   #cards {
+    margin-top: 5%;
+      margin-left: 2%;
+   }
+  .card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+ gap: 2rem;
+ margin-left: 20%;
+  /* margin-top: 20px; */
+}
+}
+
+
+/* responsive  navbar */
+
+@media (max-width: 900px) {
+  nav {
+    width: auto;
+    display: flex;
+    margin-left: 0 px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 15px;
+    color: orange;
+  }
+
+  .link {
+    padding: 5px 10px;
+
+    background-color: orange;
+  }
+}
+
+/* hero responsive */
+
+@media (mini-width: 375px) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    margin-top: 42%;
+    margin-right: 5%;
+    margin-left: 30%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    margin-top: 22%;
+    margin-right: 5%;
+    margin-left: 10%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .title h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .title p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .title a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: orange;
+    padding: 15px 20px;
+    color: white;
+  }
+
+  .image {
+    display: none;
+  }
+}
